@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="icons/Moonstar.png" />
+    <title>MoonStar Builders Inc</title>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div class="Container">
+      <!--Large Display-->
+      <nav class="navbar navbar-expand-lg col-lg-12 d-none d-lg-block">
+        <div class="container-fluid navcon">
+          <div class="col-lg-3 mt-2">
+            <a class="navbar-brand text-light" href="index.html"
+              ><img src="icons/Moonstar.png" alt="Logo" width="60" />
+              <span> MoonStar Builders Inc.</span>
+            </a>
+          </div>
+          <div class="col-lg-5">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+              <li class="nav-item">
+                <a
+                  class="nav-link active link-light"
+                  href="index.html"
+                  id="Home"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle link-light"
+                  href="project.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  PROJECT
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="project_hardwood.html"
+                      >HARDWOOD FLOORING PROJECTS</a
+                    >
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="aboutus.html" id="aboutus"
+                  >ABOUT US</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                <img src="icons/Search.png" alt="Search" width="30px" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Small Display-->
+      <nav class="navbar navbar-expand-none col-lg-12 d-md-block d-lg-none">
+        <div class="container-fluid navcon">
+          <a class="navbar-brand text-light" href="index.html"
+            ><img src="icons/Moonstar.png" alt="Logo" width="30" />
+            <span style="font-size: 20px"> MoonStar Builders Inc.</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+              <li class="nav-item">
+                <a
+                  class="nav-link active link-light"
+                  href="index.html"
+                  id="Home"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle link-light"
+                  href="project.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  PROJECT
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="project_hardwood.html"
+                      >HARDWOOD FLOORING PROJECTS</a
+                    >
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="aboutus.html" id="aboutus"
+                  >ABOUT US</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <img src="icons/Search.png" alt="Search" width="30px" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--Carousel Hero Area-->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide bg-dark"
+        data-bs-ride="carousel"
+        data-bs-interval="3500"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/Landing/Athlet.jpg"
+              class="d-block w-100"
+              alt="Athlet"
+              id="athpic"
+            />
+            <div class="row">
+              <div class="carousel-caption d-none d-md-block" id="athlet">
+                <div class="col-lg-6">
+                  <h5>WORLD ATHLETICS CERTIFIED PRODUCTS</h5>
+                </div>
+                <div class="col-lg-5 athbut" id="athbut">
+                  <button
+                    type="button"
+                    class="athlet btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalform"
+                  >
+                    Quote Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/Landing/Fifa.jpg"
+              class="d-block w-100"
+              alt="Fifa"
+              id="fifapic"
+            />
+            <div class="row">
+              <div class="carousel-caption d-none d-md-block" id="fifa">
+                <div class="col-lg-8 offset-lg-1">
+                  <h5>FIFA APPROVED HIGH QUALITY ARTIFICIAL TURF</h5>
+                </div>
+                <div class="col-lg-9 fifabut" id="fifabut">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalform"
+                  >
+                    Quote Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/landing/ITF.jpg"
+              class="d-block w-100"
+              alt="ITF"
+              id="ITFpic"
+            />
+            <div class="row">
+              <div class="carousel-caption d-none d-md-block" id="itf">
+                <div class="col-lg-10">
+                  <h5>
+                    ITF APPROVED SURFACE TO ENSURE MAXIMUM COMFORT AND
+                    PERFORMANCE
+                  </h5>
+                </div>
+                <div class="col-lg-8 fifabut" id="itfbut">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalform"
+                  >
+                    Quote Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/landing/Fiba.jpg"
+              class="d-block w-100"
+              alt="Fiba"
+              id="fibapic"
+            />
+            <div class="row">
+              <div class="carousel-caption d-none d-md-block" id="fiba">
+                <div class="col-lg-8">
+                  <h5>
+                    FIBA APPROVED BASKETBALL SURFACE INNOVATIVE AND
+                    HIGH-PERFORMANCE
+                  </h5>
+                </div>
+                <div class="col-lg-8" id="fibabut">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalform"
+                  >
+                    Quote Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Modal Form-->
+    <div class="container mt-1">
+      <!-- The Modal -->
+      <div class="modal modal-xl" id="modalform">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header" id="mh">
+              <div class="modal-title">
+                <h4>Quotation Form</h4>
+              </div>
+              <div id="closebutton">
+                <button
+                  id="closebutton"
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Modal body -->
+            <div class="container" id="mb">
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label for="first_name">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="first_name"
+                        id="first_name"
+                        placeholder="Ex. Juan"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="first_name">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="last_name"
+                        id="last_name"
+                        placeholder="Ex. Dela Cruz"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label for="email">Email Address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Ex. Info@moonstarbuilders.com"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="contact">Contact Number</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="contact_number"
+                        id="contact_number"
+                        placeholder="Ex. +639101234567"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label for="company_name">Company Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="company_name"
+                        id="company_name"
+                        placeholder="Ex. MoonStar Builders Inc."
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="company_address">Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="company_address"
+                        id="company_address"
+                        placeholder="Ex. 25c Denver St. Cubao Quezon City"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label for="innquiry">Product Inquiry</label>
+                      <select
+                        type="dropdown"
+                        class="form-control"
+                        name="dropdown"
+                        id="inquiry"
+                      >
+                        <option value="inquiry">Please Select Product</option>
+                        <option value="inquiry">Maple|Hardwood Flooring</option>
+                        <option value="inquiry">PVC Flooring</option>
+                        <option value="inquiry">Acrylic/Polyurethane</option>
+                        <option value="inquiry">Artificial Turf</option>
+                        <option value="inquiry">Fitness Gym Flooring</option>
+                        <option value="inquiry">Industrial Flooring</option>
+                        <option value="inquiry">General Construction</option>
+                        <option value="inquiry">Swimming Pool</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="innquiry">How did you find us?</label>
+                      <select
+                        type="dropdown"
+                        class="form-control"
+                        name="dropdown"
+                        id="inquiry"
+                      >
+                        <option value="inquiry">Please Select on option</option>
+                        <option value="inquiry">Google|Internet</option>
+                        <option value="inquiry">Exhibition</option>
+                        <option value="inquiry">Facebook</option>
+                        <option value="inquiry">Instagram</option>
+                        <option value="inquiry">Email</option>
+                        <option value="inquiry">Referal</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <label for="description">Inquiry Description</label>
+                      <textarea
+                        class="form-control"
+                        name="description"
+                        id="description"
+                        placeholder="Ex. I would like to request for a quotation for a brgy basketball court."
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer" id="mf">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services-->
+    <div class="container">
+      <div class="row my-5 text-center" id="Servcon">
+        <h1 class="productservices" id="header">Our Services</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 offset-lg-1">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img
+                src="img/basketball-court.jpg"
+                alt="Basketball Court"
+                width="5%"
+              />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#"> BASKETBALL COURT </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img
+                src="img/volleyballcourt.jpg"
+                alt="Volleyball Court"
+                width="5%"
+              />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#"> VOLLEYBALL COURT </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img src="img/soccer.webp" alt="Soccer Field" width="5%" />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#"> SOCCER FIELD </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 offset-lg-1">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img src="img/TRACK-OVAL.webp" alt="Track Court" width="5%" />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#"> TRACK OVAL </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img src="img/tennis-court.webp" alt="Tennis Court" width="5%" />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#"> TENNIS COURT </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <a class="img-card" href="#">
+              <img src="img/PLAYGROUNDS.webp" alt="Playground" width="5%" />
+            </a>
+            <div class="card-content">
+              <h4 class="card-title">
+                <a href="#">PLAYGROUND</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Project-->
+    <div class="container" id="projcon">
+      <div class="row my-5 d-flex align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="img/ourproject.jpg"
+            alt="Project"
+            width="100%"
+            style="padding: 30px"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="project" id="projhead">Our Project</h1>
+          <p>
+            World-class sports arena, Colorful recreational grounds, and strong
+            structures.
+          </p>
+          <a class="my-4 btn d-center ourproject" href="project.html"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--Quality Product & Services-->
+    <div class="container">
+      <div class="row my-5 d-flex align-items-center">
+        <div class="col-lg-7 py-5">
+          <h1 id="Servicehead">Products and Services</h1>
+          <p>
+            Quality construction services, world-class quality sports surfaces,
+            certified by the world governing body in the sports category.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center py-4">
+          <img
+            src="img/productandservices.jpg"
+            alt="Product and Services"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Certified-->
+    <div class="container-fluid" id="certcon">
+      <div class="row py-3 d-flex align-items-center">
+        <div class="col-lg-4 offset-lg-1">
+          <img src="img/certificate.jpg" alt="Project" width="50%" />
+        </div>
+        <div class="col-lg-7">
+          <h1 id="certhead">Certified Sports Flooring Products</h1>
+          <p>
+            Ensure that our products got the quality, safety and will unleash
+            your maximum performance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Assurance-->
+    <div class="container-fluid" id="assurecon">
+      <div class="row pt-5 d-flex align-items-center text-start">
+        <div class="col-lg-6 offset-lg-1">
+          <h1 id="assurehead">
+            "We are with you from start and beyond completion."
+          </h1>
+          <p>
+            Our Customers can “REST” with our: Reliable, Efficient, Safe and
+            Trusted Services.
+          </p>
+          <a class="my-4 btn" href="aboutus.html" id="assbutton">About Us</a>
+        </div>
+        <div class="col-lg-5 text-center py-4">
+          <img src="img/Card.png" alt="Card" class="img-fluid" id="qp" />
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid" id="footcont">
+      <div class="row footer p-5" id="footer">
+        <div class="col-lg-3">
+          <h4>Services</h4>
+          <ul class="table">
+            <li>
+              <p>Hardwood flooring</p>
+            </li>
+            <li>
+              <p>PVC flooring</p>
+            </li>
+            <li>
+              <p>Synthetic Rubber</p>
+            </li>
+            <li>
+              <p>Acrylics and Polyurethane</p>
+            </li>
+            <li>
+              <p>Polypropylene Modular Tiles</p>
+            </li>
+            <li>
+              <p>Artificial Turf</p>
+            </li>
+            <li>
+              <p>Fitness Gym Flooring</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Events</h4>
+          <ul class="table">
+            <li>
+              <p>Get a free Quote</p>
+            </li>
+            <li>
+              <p>Free Survey</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h4>Contact Us</h4>
+          <ul class="table">
+            <li>
+              <p>Info@msgsc.com</p>
+            </li>
+            <li>
+              <p>+639322231234</p>
+            </li>
+          </ul>
+          <div class="Table-footer my-5">
+            <h4>We are open:</h4>
+
+            <ul>
+              <li>
+                <p>
+                  <b>Mon-Fri<br /></b> 8:00 am - 5:00 pm
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Saturday & Sunday<br /></b> 8:00 am - 12:00 pm
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h4>Subscribe to our newsletter</h4>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            class="form-control"
+          />
+          <a href="#" class="btn my-3" id="subscription">Subscribe</a>
+          <div class="my-3">
+            <h4>Follow us</h4>
+          </div>
+          <div class="footericon">
+            <a href="https://facebook.com" target="_blank"
+              ><img src="icons/facebook.png" alt="facebook" width="30px"
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img src="icons/twitter.png" alt="twitter" width="30px"
+            /></a>
+            <a href="https://instagram.com" target="_blank"
+              ><img src="icons/instagram.png" alt="discord" width="30px"
+            /></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><img src="icons/linkedin.png" alt="linkedin" width="30px"
+            /></a>
+            <a href="https://telegram.com" target="_blank"
+              ><img src="icons/telegram.png" alt="telegram" width="30px"
+            /></a>
+            <a href="https://discord.com" target="_blank"
+              ><img src="icons/discord.png" alt="instagram" width="30px"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div id="footfirst">
+          <p>
+            FOR ENTERTAINMENT PURPOSES. © 2023 MoonStar Gaming. All Rights
+            Reserved.
+          </p>
+        </div>
+        <div id="footsecond">
+          <a href="https://www.amc.com/privacy" target="_blank">Privacy |</a>
+          <a href="https://www.amc.com/cookies" target="_blank">Cookies |</a>
+          <a href="https://www.amc.com/terms" target="_blank">Term of Use |</a>
+        </div>
+        <div class="row text-center">
+          <p id="footthird">
+            This is a work of fiction. Names, characters, businesses, places,
+            events, locales, and incidents are either the products of the
+            author's imagination or used in a fictitious manner. Any resemblance
+            to actual persons, living or dead, or actual events is purely
+            coincidental.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
